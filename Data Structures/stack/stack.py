@@ -36,6 +36,11 @@ return elements in Last In First Out order.
 #         return removed
 
 ########## Doing it with Link List ##########
+# import sys, os
+# sys.path.append(os.path.join(os.path.dirname(sys.path[0]), 'singly_linked_list'))
+# from singly_linked_list import LinkedList
+
+
 import sys, os
 sys.path.append(os.path.join(os.path.dirname(sys.path[0]), 'singly_linked_list'))
 from singly_linked_list import LinkedList
