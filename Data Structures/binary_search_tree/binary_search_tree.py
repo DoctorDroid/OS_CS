@@ -17,7 +17,8 @@ class BSTNode:
 
     # Insert the given value into the tree
     def insert(self, value):
-        if value < self.value
+        if value < self.value:
+
 
     # Return True if the tree contains the value
     # False if it does not
@@ -43,7 +44,7 @@ class BSTNode:
             return None
 
         while current_node.right:
-            currrent_node = current_node.right
+            current_node = current_node.right
 
         max_value = current_node.value
         return max_value
@@ -57,13 +58,36 @@ class BSTNode:
 
     # Print all the values in order from low to high
     # Hint:  Use a recursive, depth first traversal
+    def in_order_helper(self, node):
+        if node is None:
+            return
+        BSTNode.in_order_helper(node.left)
+        print(node.value)
+        BSTNode.in_order_helper(node.right)
+
     def in_order_print(self):
-        pass
+        BSTNode.in_order_helper(self)
+
+
 
     # Print the value of every node, starting with the given node,
     # in an iterative breadth first traversal
-    def bft_print(self):
-        pass
+
+    ################ Still needs work ################
+    # def bft_print(self):
+    #     current_level = [node]
+    #     while current_level:
+    #         next_level = list()
+    #         for node in current_level:
+    #             print(node.value)
+    #             if node.left:
+    #                 next_level.append(node.left)
+    #             if node.right:
+    #                 next_level.append(node.right)
+    #         print()
+    #         current_level = next_level
+
+
 
     # Print the value of every node, starting with the given node,
     # in an iterative depth first traversal
@@ -74,12 +98,26 @@ class BSTNode:
     # Note: Research may be required
 
     # Print Pre-order recursive DFT
+    def pre_order_helper(self, node):
+        if node is None:
+            return
+        BSTNode.pre_order_helper(node.left)
+        print(node.value)
+        BSTNode.pre_order_helper(node.right)
+
     def pre_order_dft(self):
-        pass
+        BSTNode.pre_order_helper(self)
 
     # Print Post-order recursive DFT
+    def post_order_helper(self, node):
+        if node is None:
+            return
+        BSTNode.post_order_helper(node.left)
+        BSTNode.post_order_helper(node.right)
+        print(node.value)
+
     def post_order_dft(self):
-        pass
+        BSTNode.post_order_helper(self)
 
 """
 This code is necessary for testing the `print` methods
