@@ -35,18 +35,34 @@ class AVLTree:
             if self.node.right != None:
                 self.node.right.display(level + 1, '>')
 
+    def max_depth(self):
+        if not self:
+            return 0
+        left_depth = -1
+        right_depth = -1
+        if self.node.left:
+            left_depth = self.node.left.max_depth()
+        if self.node.right:
+            right_depth = self.node.right.max_depth()
+
     """
     Computes the maximum number of levels there are
     in the tree
     """
     def update_height(self):
-        pass
+        if not self.node:
+            return 0
+        self.height = self.max_depth()
+    
 
     """
     Updates the balance factor on the AVLTree class
     """
     def update_balance(self):
-        pass
+        balance = self.balance
+        if self.node.right and self.node.left:
+            balance = self.node.left.max_depth() - self.node.right.max_depth()
+        elif self
 
     """
     Perform a left rotation, making the right child of this
@@ -54,7 +70,10 @@ class AVLTree:
     of the new parent. 
     """
     def left_rotate(self):
-        pass
+        if not self.node:
+            return
+        self.node.right = self.node
+        self.node = self.node.left
 
     """
     Perform a right rotation, making the left child of this
@@ -62,7 +81,10 @@ class AVLTree:
     of the new parent. 
     """
     def right_rotate(self):
-        pass
+        if not self.node:
+            return
+        self.node.left = self.node
+        self.node = self.node.right
 
     """
     Sets in motion the rebalancing logic to ensure the
@@ -70,7 +92,10 @@ class AVLTree:
     1 or -1
     """
     def rebalance(self):
-        pass
+        tree_hgt = self.max_depth()
+        if tree_hgt > 1 and self.node.key <self.node.left.node.key:
+            self.right_rotate()
+        elif tree_hgt < -1 and self.node.key > self.node.right.node.key
         
     """
     Uses the same insertion logic as a binary search tree

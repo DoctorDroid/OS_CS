@@ -1,3 +1,87 @@
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+
+    def get_value(self):
+        return self.value
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+        self.tail = None
+    
+    def add_to_tail(self, value):
+        new_node = Node(value)
+        if self.head is None:
+            self.head = new_node
+            self.tail = new_node
+            return
+        self.tail.next = new_node
+        self.tail = new_node
+
+    def add_to_head(self, value):
+        new_node = Node(value)
+        if self.head is None:
+            self.head = new_node
+            self.tail = new_node
+            return
+        old_head = self.head # Holds the or
+        self.head = new_node
+        self.head.next = old_head
+    
+    def remove_head(self):
+        data = self.head.get_value()
+        if self.head is None:
+            return data
+        self.head = self.head.next
+        return data
+
+    def remove_tail(self):
+        data = self.tail.get_value()
+        cursor = self.head
+        while cursor.next.next is not None:
+            cursor - cursor.next
+        self.tail = cursor
+        self.tail.next = None
+        return data
+
+class Queue:
+    def __init__(self):
+        self.size = 0
+        self.storage = LinkedList()
+
+    def __len__(self):
+        return self.size
+
+    def enqueue(self, value):
+        self.size += 1  # self.size = self.size + 1 (same thing)
+        self.storage.add_to_tail(value)
+
+    def dequeue(self):
+        if self.size == 0:
+            return
+        self.size -= 1 # self.size = self.size - 1 (same thing)
+        return self.storage.remove_head()
+
+class Stack:
+    def __init__(self):
+        self.size = 0
+        self.storage = LinkedList()
+
+    def __len__(self):
+        return self.size
+
+    def push(self, value):
+        self.size += 1
+        return self.storage.add_to_head(value)
+
+    def pop(self):
+        if self.size == 0:
+            return
+        self.size -= 1
+        return self.storage.remove_head()
+
 """
 Binary search trees are a data structure that enforce an ordering over 
 the data they store. That ordering in turn makes it a lot more efficient 
@@ -52,22 +136,28 @@ class BSTNode:
 
     # Call the function `fn` on the value of each node
     def for_each(self, fn):
-        pass
+        
 
     # Part 2 -----------------------
 
     # Print all the values in order from low to high
     # Hint:  Use a recursive, depth first traversal
-    def in_order_helper(self, node):
-        if node is None:
-            return
-        BSTNode.in_order_helper(node.left)
-        print(node.value)
-        BSTNode.in_order_helper(node.right)
+    # def in_order_helper(self, node):
+    #     if node is None:
+    #         return
+    #     BSTNode.in_order_helper(node.left)
+    #     print(node.value)
+    #     BSTNode.in_order_helper(node.right)
+
+    # def in_order_print(self):
+    #     BSTNode.in_order_helper(self)
 
     def in_order_print(self):
-        BSTNode.in_order_helper(self)
-
+        if self.left:
+            self.left.in_order_print()
+        print(self)
+        if self.right:
+            self.right.in_order_print()
 
 
     # Print the value of every node, starting with the given node,
@@ -87,37 +177,68 @@ class BSTNode:
     #         print()
     #         current_level = next_level
 
+    def bft_print(self):
+        q = Queue()
+        q.enqueue(self)
+        while q.size != 0:
+            current = q.dequeue()
+            print(current.value)
+            if current.left:
+                q.enqueue(current.left)
+            if current.right:
+                q.enqueue(current.right)
+
 
 
     # Print the value of every node, starting with the given node,
     # in an iterative depth first traversal
     def dft_print(self):
-        pass
+        s = Stack()
+        s.push(self)
+        while s.size != 0:
+            current = s.pop()
+            
 
     # Stretch Goals -------------------------
     # Note: Research may be required
 
     # Print Pre-order recursive DFT
-    def pre_order_helper(self, node):
-        if node is None:
-            return
-        BSTNode.pre_order_helper(node.left)
-        print(node.value)
-        BSTNode.pre_order_helper(node.right)
+    # def pre_order_helper(self, node):
+    #     if node is None:
+    #         return
+    #     BSTNode.pre_order_helper(node.left)
+    #     print(node.value)
+    #     BSTNode.pre_order_helper(node.right)
+
+    # def pre_order_dft(self):
+    #     BSTNode.pre_order_helper(self)
 
     def pre_order_dft(self):
-        BSTNode.pre_order_helper(self)
+        if self:
+            print(self.value)
+            if self.left:
+                self.left.pre_order_dft()
+            if self.right:
+                self.right.pre_order_dft()
 
     # Print Post-order recursive DFT
-    def post_order_helper(self, node):
-        if node is None:
-            return
-        BSTNode.post_order_helper(node.left)
-        BSTNode.post_order_helper(node.right)
-        print(node.value)
+    # def post_order_helper(self, node):
+    #     if node is None:
+    #         return
+    #     BSTNode.post_order_helper(node.left)
+    #     BSTNode.post_order_helper(node.right)
+    #     print(node.value)
+
+    # def post_order_dft(self):
+    #     BSTNode.post_order_helper(self)
 
     def post_order_dft(self):
-        BSTNode.post_order_helper(self)
+        if self:
+            if self.left:
+                self.left.post_order_dft()
+            if self.right:
+                self.right.post_order_dft()
+            print(self.value)
 
 """
 This code is necessary for testing the `print` methods
