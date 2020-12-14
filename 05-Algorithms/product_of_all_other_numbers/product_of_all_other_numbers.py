@@ -2,10 +2,17 @@
 Input: a List of integers
 Returns: a List of integers
 '''
-def product_of_all_other_numbers(arr):
-    # Your code here
 
-    pass
+
+# First-pass solution (just make it work!)
+def product_of_all_other_numbers(arr):
+    output = [0 for i in range(len(arr) - 1)]  # Creates an empty array
+
+    temp = []  # Will hold values that are not the index value
+
+    for i in range(len(arr)):
+        arr_i = i  # Will hold the array index value
+
 
 
 if __name__ == '__main__':
