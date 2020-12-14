@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cf9baf79-7b53-4a9c-972c-92db5a61aed2" name="Default Changelist" comment="updated before evening group - missed morning group" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileColors">
+    <fileColor scope="Tests" color="#243125" />
+    <fileColor scope="Local Unit Tests" color="#243125" />
+    <fileColor scope="Android Instrumented Tests" color="#243125" />
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1lOlhPe6TGuxTkpWavZ5Bo3rW5g" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cf9baf79-7b53-4a9c-972c-92db5a61aed2" name="Default Changelist" comment="" />
+      <created>1607476136714</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607476136714</updated>
+      <workItem from="1607476138487" duration="19054000" />
+      <workItem from="1607707004765" duration="55000" />
+      <workItem from="1607707073336" duration="1031000" />
+      <workItem from="1607721479482" duration="2050000" />
+      <workItem from="1607731471089" duration="6854000" />
+      <workItem from="1607825441986" duration="640000" />
+      <workItem from="1607829783381" duration="23000" />
+      <workItem from="1607829824517" duration="599000" />
+      <workItem from="1607891153021" duration="17000" />
+      <workItem from="1607959734645" duration="4753000" />
+    </task>
+    <task id="LOCAL-00001" summary="updated before evening group - missed morning group">
+      <created>1607561435757</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607561435757</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adding repo files for evening group">
+      <created>1607562744153</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607562744153</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated after evening group - need to finish">
+      <created>1607577634769</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607577634770</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added comments">
+      <created>1607588324480</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607588324480</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added comments, finished after evening group, no stretch goals">
+      <created>1607592958370</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607592958370</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Rename files to keep in order of when we did them.">
+      <created>1607721699963</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607721699963</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Completed first-pass solution">
+      <created>1607732292629</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607732292629</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Completed first-pass solution">
+      <created>1607732870956</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607732870956</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Adding changes at start of morning group">
+      <created>1607959868602</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607959868602</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="updated before evening group - missed morning group" />
+    <MESSAGE value="Adding repo files for evening group" />
+    <MESSAGE value="Updated after evening group - need to finish" />
+    <MESSAGE value="Added comments" />
+    <MESSAGE value="Added comments, finished after evening group, no stretch goals" />
+    <MESSAGE value="Rename files to keep in order of when we did them." />
+    <MESSAGE value="Completed first-pass solution" />
+    <MESSAGE value="Adding changes at start of morning group" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding changes at start of morning group" />
+  </component>
+</project>
