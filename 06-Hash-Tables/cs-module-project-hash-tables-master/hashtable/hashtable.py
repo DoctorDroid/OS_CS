@@ -21,7 +21,9 @@ class HashTable:
     """
 
     def __init__(self, capacity):
-        # Your code here
+        self.capacity = capacity
+        self.storage = [None] * capacity
+        self.items = 0
 
 
     def get_num_slots(self):
@@ -34,7 +36,7 @@ class HashTable:
 
         Implement this.
         """
-        # Your code here
+        return self.capacity
 
 
     def get_load_factor(self):
@@ -43,7 +45,28 @@ class HashTable:
 
         Implement this.
         """
-        # Your code here
+        """
+        An instance of HashMap has two parameters that affect its performance: 
+            initial capacity and load factor. The capacity is the number of 
+            buckets in the hash table, and the initial capacity is simply the 
+            capacity at the time the hash table is created. The load factor is 
+            a measure of how full the hash table is allowed to get before its 
+            capacity is automatically increased. When the number of entries in 
+            the hash table exceeds the product of the load factor and the 
+            current capacity, the hash table is rehashed (that is, internal data 
+            structures are rebuilt) so that the hash table has approximately 
+            twice the number of buckets.
+
+        As a general rule, the default load factor (.75) offers a good tradeoff 
+        between time and space costs. Higher values decrease the space overhead 
+        but increase the lookup cost (reflected in most of the operations of the 
+        HashMap class, including get and put). The expected number of entries in 
+        the map and its load factor should be taken into account when setting 
+        its initial capacity, so as to minimize the number of rehash operations. If the initial capacity is greater than the maximum number of entries divided by the load factor, no rehash operations will ever occur.
+
+        """
+        return (self.items / self.capacity)
+
 
 
     def fnv1(self, key):
@@ -75,7 +98,12 @@ class HashTable:
 
         Implement this, and/or FNV-1.
         """
-        # Your code here
+
+        # Ava's Code
+        hash = 5381
+        for byte in key:
+            hash = (hash * 33) + ord(byte)
+        return hash
 
 
     def hash_index(self, key):
@@ -86,6 +114,7 @@ class HashTable:
         #return self.fnv1(key) % self.capacity
         return self.djb2(key) % self.capacity
 
+
     def put(self, key, value):
         """
         Store the value with the given key.
@@ -94,34 +123,43 @@ class HashTable:
 
         Implement this.
         """
+
+        # Josh's code
+        # index = self.hash_index(key)
+        # node = HashTableEntry(key, value)
+        #
+        # if self.storage[index] is not None:
+        #
+        #     if self.storage[index].key == key
+        #         self.storage[index].value = value
+        #
+        #     else:
+        #         current = self.storage[index]
+        #
+        #         while current.next is not None:
+        #             if current.key == key:
+        #                 current.value = value
+        #
+        #             else:
+        #                 current = current.next
+        #
+        #         if current.key == key:
+        #             current.value = value
+        #
+        #         else:
+        #             current.next = node
+        #             self.size += 1
+        #
+        # else:
+        #     self.storage[index] = node
+        #     self.size += 1
+
+        # Ava's code
+        # Day 1
         index = self.hash_index(key)
-        node = HashTableEntry(key, value)
+        self.storage[index] = HashTableEntry(key, value)
 
-        if self.storage[index] is not None:
-
-            if self.storage[index].key == key
-                self.storage[index].value = value
-
-            else:
-                current = self.storage[index]
-
-                while current.next is not None:
-                    if current.key == key:
-                        current.value = value
-
-                    else:
-                        current = current.next
-
-                if current.key == key:
-                    current.value = value
-
-                else:
-                    current.next = node
-                    self.size += 1
-
-        else:
-            self.storage[index] = node
-            self.size += 1
+        # Day 2
 
 
     def delete(self, key):
@@ -132,7 +170,19 @@ class HashTable:
 
         Implement this.
         """
-        # Your code here
+
+        # Ava's code
+        # Day 1
+        index = self.hash_index(key)
+
+        if self.storage[index]:
+            self.storage[index] = None
+
+        else:
+            print('Index does not exist: Watch for falling rocks!!!')
+
+        # Day 2
+
 
 
     def get(self, key):
@@ -143,7 +193,19 @@ class HashTable:
 
         Implement this.
         """
-        # Your code here
+
+        # Ava's code
+        # Day 1
+        index = self.hash_index(key)
+
+        if self.storage[index]:
+            return self.storage[index].value
+
+        else:
+            return None
+
+        # Day 2
+
 
 
     def resize(self, new_capacity):
@@ -153,8 +215,15 @@ class HashTable:
 
         Implement this.
         """
-        # Your code here
 
+        # Ava's code
+        old_table = self.storage
+        self.capacity = new_capacity
+        self.storage = [None] * new_capacity
+
+        for entry in old_table:
+            if entry is not None:
+                self.put(entry.key, entry.value)
 
 
 if __name__ == "__main__":
