@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cf9baf79-7b53-4a9c-972c-92db5a61aed2" name="Default Changelist" comment="Updated after morning group - need to finish">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06-Hash-Tables/cs-module-project-hash-tables-master/hashtable/hashtable.py" beforeDir="false" afterPath="$PROJECT_DIR$/06-Hash-Tables/cs-module-project-hash-tables-master/hashtable/hashtable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-Hash-Tables/cs-module-project-hash-tables-master/applications/expensive_seq/expensive_seq.py" beforeDir="false" afterPath="$PROJECT_DIR$/06-Hash-Tables/cs-module-project-hash-tables-master/applications/expensive_seq/expensive_seq.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-Hash-Tables/cs-module-project-hash-tables-master/applications/lookup_table/lookup_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/06-Hash-Tables/cs-module-project-hash-tables-master/applications/lookup_table/lookup_table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-Hash-Tables/cs-module-project-hash-tables-master/applications/word_count/word_count.py" beforeDir="false" afterPath="$PROJECT_DIR$/06-Hash-Tables/cs-module-project-hash-tables-master/applications/word_count/word_count.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +67,9 @@
       <workItem from="1607959734645" duration="5025000" />
       <workItem from="1607995134847" duration="3895000" />
       <workItem from="1608048498379" duration="1105000" />
-      <workItem from="1608082301817" duration="1559000" />
+      <workItem from="1608082301817" duration="2220000" />
+      <workItem from="1608131555403" duration="1820000" />
+      <workItem from="1608133683139" duration="1945000" />
     </task>
     <task id="LOCAL-00001" summary="updated before evening group - missed morning group">
       <created>1607561435757</created>
@@ -151,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607999007065</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="updated after evening group">
+      <created>1608083898411</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1608083898411</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,6 +189,7 @@
     <MESSAGE value="Adding changes at start of morning group" />
     <MESSAGE value="Updated after morning group - need to finish" />
     <MESSAGE value="Updated after evening group" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated after evening group" />
+    <MESSAGE value="updated after evening group" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated after evening group" />
   </component>
 </project>

@@ -1,5 +1,14 @@
 def word_count(s):
-    # Your code here
+    counters = {}
+    word_list = s.lower().split()
+    for word in word_list:
+        word = word.strip('":;,.-+=/\\|[]}{()*^&’')
+        if word in counters:
+            counters[word] += 1
+        else:
+            counters[word] = 1
+    # print(word_list)
+    return counters
 
 
 
