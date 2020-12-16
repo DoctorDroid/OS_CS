@@ -63,7 +63,9 @@
       <workItem from="1607829824517" duration="599000" />
       <workItem from="1607891153021" duration="17000" />
       <workItem from="1607959734645" duration="5025000" />
-      <workItem from="1607995134847" duration="3425000" />
+      <workItem from="1607995134847" duration="3895000" />
+      <workItem from="1608048498379" duration="1105000" />
+      <workItem from="1608082301817" duration="1559000" />
     </task>
     <task id="LOCAL-00001" summary="updated before evening group - missed morning group">
       <created>1607561435757</created>
@@ -135,7 +137,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607969305909</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Updated after evening group">
+      <created>1607998798249</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1607998798249</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Updated after evening group">
+      <created>1607999007065</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1607999007065</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,6 +177,7 @@
     <MESSAGE value="Completed first-pass solution" />
     <MESSAGE value="Adding changes at start of morning group" />
     <MESSAGE value="Updated after morning group - need to finish" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated after morning group - need to finish" />
+    <MESSAGE value="Updated after evening group" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated after evening group" />
   </component>
 </project>

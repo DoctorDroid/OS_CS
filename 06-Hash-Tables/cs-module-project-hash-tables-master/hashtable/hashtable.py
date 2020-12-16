@@ -163,6 +163,34 @@ class HashTable:
         self.storage[index] = HashTableEntry(key, value)
 
         # Day 2
+        new_entry = HashTableEntry(key, value)
+        if self.storage[index] is not None:
+            if self.storage[index].key == key
+                self.storage[index].value = value
+
+            else:
+                current = self.storage[index]
+
+            while current.next is not None:
+                if current.key == key:
+                    current.value = value
+
+                # else:
+                current = current.next
+
+                if current.key == key:
+                    current.value = value
+
+            else:
+                current.next = new_entry
+
+        else:
+            self.storage[index] = new_entry
+
+        self.size += 1
+
+        if self.get_load_factor() >= 7:
+            self.resize((self.capacity * 2))
 
 
     def delete(self, key):
