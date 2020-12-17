@@ -158,12 +158,9 @@ class HashTable:
         #     self.size += 1
 
         # Ava's code
-        # Day 1
         index = self.hash_index(key)
-        self.storage[index] = HashTableEntry(key, value)
-
-        # Day 2
         new_entry = HashTableEntry(key, value)
+
         if self.storage[index] is not None:
             if self.storage[index].key == key
                 self.storage[index].value = value
@@ -175,19 +172,18 @@ class HashTable:
                 if current.key == key:
                     current.value = value
 
-                # else:
                 current = current.next
 
                 if current.key == key:
                     current.value = value
 
-            else:
-                current.next = new_entry
+                else:
+                    current.next = new_entry
 
         else:
             self.storage[index] = new_entry
 
-        self.size += 1
+        self.items += 1
 
         if self.get_load_factor() >= 7:
             self.resize((self.capacity * 2))
@@ -203,17 +199,35 @@ class HashTable:
         """
 
         # Ava's code
-        # Day 1
         index = self.hash_index(key)
 
-        if self.storage[index]:
-            self.storage[index] = None
+        if self.storage[index] is None:
+            return None
+
+        elif self.storage[index].key == key:
+            self.items -= 1
+
+            if self.storage[index].next is not None:
+                self.storage[index] = self.storage[index].next
+
+            else:
+                self.storage[index] = None
 
         else:
-            print('Index does not exist: Watch for falling rocks!!!')
+            prev = self.storage[index]
+            current = self.storage[index].next
 
-        # Day 2
+            while current is not None:
 
+                if current.key == key:
+                    prev.next = current.next
+                    self.items -= 1
+
+                else:
+                    prev = current
+                    current = current.next
+
+        return 'Success!'
 
 
     def get(self, key):
@@ -226,17 +240,27 @@ class HashTable:
         """
 
         # Ava's code
-        # Day 1
         index = self.hash_index(key)
 
-        if self.storage[index]:
-            return self.storage[index].value
-
-        else:
+        if self.storage[index] is None:
             return None
 
-        # Day 2
+        elif self.storage[index].key == key:
+            return self.storage[index].value
 
+        elif self.storage[index] is not None:
+            current = self.storage[index]
+
+            while current.next is not None:
+                next_node = current.next
+
+                if next_node.key == key:
+                    return next_node.value
+
+                else:
+                    current = next_node
+
+            return None
 
 
     def resize(self, new_capacity):
