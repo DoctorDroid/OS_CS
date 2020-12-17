@@ -2,10 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf9baf79-7b53-4a9c-972c-92db5a61aed2" name="Default Changelist" comment="Updated after morning group - need to finish">
+      <change afterPath="$PROJECT_DIR$/07-Graphs/FAQs.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/objectives/breadth-first-search/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/objectives/breadth-first-search/img/bfs-visit-order.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/objectives/connected-components/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/objectives/connected-components/img/connected-components.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/objectives/depth-first-search/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/objectives/depth-first-search/img/dfs-visit-order.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/objectives/graph-intro/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/objectives/graph-intro/img/GoogleMaps.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/objectives/graph-intro/img/graph.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/objectives/graph-intro/img/representations.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/objectives/graph-intro/img/social_graph_directed.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/objectives/graph-intro/img/social_graph_undirected.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/objectives/graph-representations/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/objectives/graph-representations/img/representations.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/objectives/graph-representations/img/sample-graph.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/objectives/randomness/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/projects/adventure/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/projects/adventure/adv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/projects/adventure/maps/main_maze.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/projects/adventure/maps/test_cross.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/projects/adventure/maps/test_line.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/projects/adventure/maps/test_loop.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/projects/adventure/maps/test_loop_fork.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/projects/adventure/player.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/projects/adventure/room.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/projects/adventure/world.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/projects/ancestor/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/projects/ancestor/ancestor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/projects/ancestor/test_ancestor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/projects/graph/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/projects/graph/graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/projects/graph/test_graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/projects/graph/util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/projects/social/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-Graphs/projects/social/social.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06-Hash-Tables/cs-module-project-hash-tables-master/applications/expensive_seq/expensive_seq.py" beforeDir="false" afterPath="$PROJECT_DIR$/06-Hash-Tables/cs-module-project-hash-tables-master/applications/expensive_seq/expensive_seq.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06-Hash-Tables/cs-module-project-hash-tables-master/applications/lookup_table/lookup_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/06-Hash-Tables/cs-module-project-hash-tables-master/applications/lookup_table/lookup_table.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06-Hash-Tables/cs-module-project-hash-tables-master/applications/word_count/word_count.py" beforeDir="false" afterPath="$PROJECT_DIR$/06-Hash-Tables/cs-module-project-hash-tables-master/applications/word_count/word_count.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +103,9 @@
       <workItem from="1608048498379" duration="1105000" />
       <workItem from="1608082301817" duration="2220000" />
       <workItem from="1608131555403" duration="1820000" />
-      <workItem from="1608133683139" duration="1945000" />
+      <workItem from="1608133683139" duration="2513000" />
+      <workItem from="1608169715382" duration="629000" />
+      <workItem from="1608219067927" duration="4296000" />
     </task>
     <task id="LOCAL-00001" summary="updated before evening group - missed morning group">
       <created>1607561435757</created>
@@ -162,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608083898411</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="updated after morning group">
+      <created>1608136039363</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1608136039363</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,6 +233,7 @@
     <MESSAGE value="Updated after morning group - need to finish" />
     <MESSAGE value="Updated after evening group" />
     <MESSAGE value="updated after evening group" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated after evening group" />
+    <MESSAGE value="updated after morning group" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated after morning group" />
   </component>
 </project>
