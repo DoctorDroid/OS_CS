@@ -11,7 +11,7 @@ def slowfun_too_slow(x, y):
     return v
 
 
-lookup_table = {}
+lookup_table = {}  # Cache, which is kind of like a dictionary
 
 
 def slowfun(x, y):

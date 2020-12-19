@@ -1,6 +1,10 @@
 def no_dups(s):
-    # Your code here
-
+    split_sent = s.split()
+    output = ''
+    for word in split_sent:
+        if output.find(word) == -1:
+            output = output + word + ' '
+    return output.strip(' ')
 
 
 if __name__ == "__main__":
