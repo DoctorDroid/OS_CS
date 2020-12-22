@@ -106,7 +106,7 @@ class Graph:
             if v not in visited:
                 print(v)
                 visited.add(v)
-                for next_vert ib self.get_neighbors(v):
+                for next_vert in self.get_neighbors(v):
                     s.push(next_vert)
 
     def dft_recursive(self, starting_vertex, visited=None):
