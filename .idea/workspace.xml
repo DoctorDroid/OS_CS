@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cf9baf79-7b53-4a9c-972c-92db5a61aed2" name="Default Changelist" comment="Updated after morning group - need to finish">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06-Hash-Tables/cs-module-project-hash-tables-master/applications/crack_caesar/crack_caesar.py" beforeDir="false" afterPath="$PROJECT_DIR$/06-Hash-Tables/cs-module-project-hash-tables-master/applications/crack_caesar/crack_caesar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06-Hash-Tables/cs-module-project-hash-tables-master/applications/histo/histo.py" beforeDir="false" afterPath="$PROJECT_DIR$/06-Hash-Tables/cs-module-project-hash-tables-master/applications/histo/histo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06-Hash-Tables/cs-module-project-hash-tables-master/applications/lookup_table/lookup_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/06-Hash-Tables/cs-module-project-hash-tables-master/applications/lookup_table/lookup_table.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06-Hash-Tables/cs-module-project-hash-tables-master/applications/markov/markov.py" beforeDir="false" afterPath="$PROJECT_DIR$/06-Hash-Tables/cs-module-project-hash-tables-master/applications/markov/markov.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06-Hash-Tables/cs-module-project-hash-tables-master/applications/no_dups/no_dups.py" beforeDir="false" afterPath="$PROJECT_DIR$/06-Hash-Tables/cs-module-project-hash-tables-master/applications/no_dups/no_dups.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06-Hash-Tables/cs-module-project-hash-tables-master/applications/sumdiff/sumdiff.py" beforeDir="false" afterPath="$PROJECT_DIR$/06-Hash-Tables/cs-module-project-hash-tables-master/applications/sumdiff/sumdiff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-Graphs/projects/graph/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/07-Graphs/projects/graph/graph.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +71,8 @@
       <workItem from="1608169715382" duration="629000" />
       <workItem from="1608219067927" duration="7550000" />
       <workItem from="1608248582989" duration="10414000" />
-      <workItem from="1608265361834" duration="3839000" />
+      <workItem from="1608265361834" duration="3898000" />
+      <workItem from="1608599700308" duration="6672000" />
     </task>
     <task id="LOCAL-00001" summary="updated before evening group - missed morning group">
       <created>1607561435757</created>
@@ -190,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608228480662</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="updated after evening group">
+      <created>1608350317750</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1608350317750</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -217,10 +220,10 @@
     <MESSAGE value="Adding changes at start of morning group" />
     <MESSAGE value="Updated after morning group - need to finish" />
     <MESSAGE value="Updated after evening group" />
-    <MESSAGE value="updated after evening group" />
     <MESSAGE value="updated after morning group" />
     <MESSAGE value="after morning group, need to finish" />
     <MESSAGE value="updated after recording from evening group 12-15-2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated after recording from evening group 12-15-2020" />
+    <MESSAGE value="updated after evening group" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated after evening group" />
   </component>
 </project>
